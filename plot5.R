@@ -3,7 +3,7 @@ SCC <- readRDS("Source_Classification_Code.rds")
 
 library(ggplot2)
 
-baltimore<-subset(NEI,fips=='24510'& type == 'ON-ROAD')
+baltimore<-subset(NEI$fips=='24510'& type == 'ON-ROAD')
 
 
 baltimore_motor<-aggregate(Emissions ~ year,baltimore,sum)
